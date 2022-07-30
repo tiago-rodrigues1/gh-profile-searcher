@@ -44,7 +44,7 @@
         <h3 class="fw-normal fs-6">Github profile searcher</h3>
     </header>
     <main class="container-sm">
-        <form method="get" class="w-100 d-flex flex-wrap gap-4 py-4">
+        <form method="get" action="getUserInfo.php" class="w-100 d-flex flex-wrap gap-4 py-4">
             <div class="vstack">
                 <label for="username" class="form-label">Github Username</label>
                 <input 
