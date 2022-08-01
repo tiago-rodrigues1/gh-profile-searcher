@@ -7,6 +7,7 @@
     <title>Get Github Profile</title>
 
     <script src="public/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="public/styles/style.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,19 +19,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <style>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-    }
-
-        html,
-        body {
-            height: 100vh;
-            width: 100vw;
-        }
-
         @media screen and (max-width: 640px) {
             #submitbtn {
                 width: 100%;

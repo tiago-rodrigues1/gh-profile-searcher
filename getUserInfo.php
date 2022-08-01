@@ -85,6 +85,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gh-profile | <?php echo $userInfo["username"]?></title>
 
+    <link rel="stylesheet" href="public/styles/style.css">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,25 +97,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-            list-style: none;
-        }
-
-        html,
-        body {
-            height: 100vh;
-            width: 100vw;
-        }
-
-        body {
-            display: grid;
-            place-items: center;
-        }
-
         img {
             width: 9rem;
             height: 9rem;
@@ -124,6 +107,11 @@
             grid-template-columns: auto auto;
             column-gap: 1.5rem;
             row-gap: 1rem;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
         }
     </style>
 </head>
