@@ -7,7 +7,7 @@
     <title>Get Github Profile</title>
 
     <script src="public/scripts/script.js" defer></script>
-    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="public/styles/global.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

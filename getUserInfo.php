@@ -85,7 +85,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gh-profile | <?php echo $userInfo["username"]?></title>
 
-    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="public/styles/global.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
