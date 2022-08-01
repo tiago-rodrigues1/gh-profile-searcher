@@ -67,7 +67,38 @@
 
     getUserInfo($username);
 
-    foreach ($userInfo as $key => $value) {
-        echo "$key => $value <br>";
-    }
-?>
+        .grid-repos {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 1.5rem;
+            row-gap: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <?php if ((bool)$userInfo): ?>
+        <article class="p-4 rounded-4 bg-secondary bg-opacity-25">
+            <header class="vstack gap-2 pb-4">
+                <h1 class="fw-medium fs-2"><?php echo $userInfo["name"]?></h1>
+                <h3 class="fw-normal fs-6 opacity-75"><?php echo $userInfo["username"]?></h3>
+            </header>
+            <main>
+                <div class="w-100 text-center py-2">
+                    <img 
+                        src=<?php echo $userInfo["avatar_url"]?> 
+                        alt="Foto de <?php echo $userInfo["name"]?>"
+                        class="rounded-circle mx-auto"
+                    >
+                </div>
+                <div class="w-100 hstack justify-content-between py-2">
+                    <p>Seguidores: <strong><?php echo $userInfo["count_followers"]?></strong></p>
+                    <p>Repositórios: <strong><?php echo $userInfo["count_repos"]?></strong></p>
+                </div>
+                <div class="vstack gap-2 py-2">
+                    <h2 class="fw-medium fs-5">Repositórios mais recentes</h2>
+                    <ul class="px-0 grid-repos">
+                        <?php
+                            foreach($userInfo["newest_repos"] as $repo) {
+                                echo "<li>$repo</li>";
+                            }
+                        ?>
